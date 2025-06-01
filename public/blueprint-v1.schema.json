@@ -1,5 +1,6 @@
 {
-  "$schema": "https://blueprints.ndmh.xyz/blueprint-v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blueprints.ndmh.xyz/blueprint-v1.schema.json",
   "type": "object",
   "properties": {
     "format_version": {
@@ -8,7 +9,6 @@
     },
     "bid": {
       "type": "string",
-      "format": "uuid",
       "description": "Unique identifier for the blueprint"
     },
     "update_url": {
@@ -46,7 +46,6 @@
           },
           "image": {
             "type": "string",
-            "format": "uri",
             "description": "Docker image URL"
           }
         },
@@ -93,7 +92,6 @@
     },
     "setup_docker_image": {
       "type": "string",
-      "format": "uri",
       "description": "Docker image used for server setup, can be different from the runtime images"
     },
     "setup_interpreter": {
