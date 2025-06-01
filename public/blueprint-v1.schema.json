@@ -14,7 +14,7 @@
     "update_url": {
       "type": "string",
       "format": "uri",
-      "description": "URL to check for updates, can be null if not imported from a URL"
+      "description": "URL to check for updates, can be empty if not imported from a URL"
     },
     "name": {
       "type": "string",
@@ -23,6 +23,18 @@
     "description": {
       "type": "string",
       "description": "Description of the blueprint"
+    },
+    "category": {
+      "type": "string",
+      "description": "Category of the blueprint, e.g., Minecraft/Java,Generic,Database,SteamCMD,Games,Storage,Other,..."
+    },
+    "icon": {
+      "type": "string",
+      "description": "Base64 encoded icon image for the blueprint, used in UI"
+    },
+    "banner": {
+      "type": "string",
+      "description": "Base64 encoded banner image for the blueprint, used in UI"
     },
     "flags": {
       "type": "array",
@@ -91,14 +103,13 @@
     },
     "setup_script_base64": {
       "type": "string",
-      "format": "base64",
       "description": "Base64 encoded setup script that will be executed during server setup"
     },
     "setup_docker_image": {
       "type": "string",
       "description": "Docker image used for server setup, can be different from the runtime images"
     },
-    "setup_interpreter": {
+    "setup_script_interpreter": {
       "type": "string",
       "description": "Interpreter used for the setup script (e.g., bash, sh, python)"
     }
@@ -108,16 +119,18 @@
     "bid",
     "name",
     "description",
+    "category",
+    "icon",
+    "banner",
     "flags",
     "version",
     "docker_images",
     "blocked_files",
-    "server_binary",
     "start_command",
     "stop_command",
     "setup_script_base64",
     "setup_docker_image",
-    "setup_interpreter"
+    "setup_script_interpreter"
   ],
   "additionalProperties": false
 }
