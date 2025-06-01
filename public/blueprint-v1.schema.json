@@ -77,6 +77,10 @@
       },
       "description": "List of files that the user is not allowed to access or modify"
     },
+    "server_binary": {
+      "type": "string",
+      "description": "Path to the server binary inside the server container, e.g., ~/server"
+    },
     "start_command": {
       "type": "string",
       "description": "Command to start the server, can use environment variables like {{$env::SERVER_BINARY}} or {{$env::SERVER_MEMORY}}"
@@ -108,6 +112,7 @@
     "version",
     "docker_images",
     "blocked_files",
+    "server_binary",
     "start_command",
     "stop_command",
     "setup_script_base64",
