@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (
     <div>
-        <h1>Panelium Blueprints</h1>
+        <h1>Panelium Blueprint Repository</h1>
     </div>
   )
 }
