@@ -24,6 +24,13 @@
       "type": "string",
       "description": "Description of the blueprint"
     },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "JSON array of flags that modify the behavior of the blueprint, e.g., eula accept needed for start, server config ui, plugin manager, modpack installer, etc."
+    },
     "version": {
       "type": "integer",
       "description": "Version of the blueprint, used for compatibility checks"
@@ -99,6 +106,7 @@
     "bid",
     "name",
     "description",
+    "flags",
     "version",
     "docker_images",
     "blocked_files",
