@@ -61,7 +61,10 @@
             "description": "Docker image URL"
           }
         },
-        "required": ["name", "image"]
+        "required": [
+          "name",
+          "image"
+        ]
       },
       "description": "List of Docker images that can be used with this blueprint"
     },
@@ -85,7 +88,9 @@
             "default": false
           }
         },
-        "required": ["file"]
+        "required": [
+          "file"
+        ]
       },
       "description": "List of files that the user is not allowed to access or modify"
     },
