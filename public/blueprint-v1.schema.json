@@ -79,7 +79,7 @@
     },
     "server_binary": {
       "type": "string",
-      "description": "Path to the server binary inside the server container, e.g., ~/server"
+      "description": "Path to the server binary inside the server container, e.g., server.jar, server.exe, etc."
     },
     "start_command": {
       "type": "string",
