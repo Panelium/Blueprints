@@ -27,8 +27,8 @@
   "blocked_files": [
     {
       "file": "{{$env::SERVER_BINARY}}",
-      "viewable": true,
-      "accessible": false
+      "visible": true,
+      "readable": false
     }
   ],
   "server_binary": "server.jar",

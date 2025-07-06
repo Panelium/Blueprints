@@ -77,12 +77,12 @@
             "type": "string",
             "description": "Path to the file that is blocked"
           },
-          "viewable": {
+          "visible": {
             "type": "boolean",
             "description": "If true, the user can see that the file exists, but still cannot see its contents or modify it",
             "default": false
           },
-          "accessible": {
+          "readable": {
             "type": "boolean",
             "description": "If true, the user can see the file contents, but cannot modify it",
             "default": false
