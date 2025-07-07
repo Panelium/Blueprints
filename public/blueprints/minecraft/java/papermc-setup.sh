@@ -2,6 +2,8 @@
 # Software: PaperMC
 # Variables: MINECRAFT_VERSION?, BUILD_NUMBER?, SERVER_BINARY
 
+apk add --no-cache curl jq
+
 PROJECT_DATA=$(curl -fsS https://api.papermc.io/v2/projects/paper)
 if [ -z "$PROJECT_DATA" ]; then
   echo "Error: Failed to fetch data from PaperMC API." >&2
