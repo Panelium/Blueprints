@@ -49,7 +49,7 @@ fi
 JAR_NAME="paper-${MINECRAFT_VERSION}-${BUILD_NUMBER}.jar"
 DOWNLOAD_URL="https://api.papermc.io/v2/projects/paper/versions/${MINECRAFT_VERSION}/builds/${BUILD_NUMBER}/downloads/${JAR_NAME}"
 
-cd /mnt/server || echo "Error: Failed to change directory to /mnt/server" >&2 && exit 1
+cd /data || echo "Error: Failed to change directory to /data" >&2 && exit 1
 
 echo "Downloading ${JAR_NAME} from ${DOWNLOAD_URL} to ${SERVER_BINARY}..."
 rm -f "${SERVER_BINARY}"
