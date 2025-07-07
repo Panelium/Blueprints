@@ -13,7 +13,7 @@
     "server_config:minecraft",
     "plugin_manager:minecraft,papermc"
   ],
-  "version": 3,
+  "version": 4,
   "docker_images": [
     {
       "name": "Java 21",
