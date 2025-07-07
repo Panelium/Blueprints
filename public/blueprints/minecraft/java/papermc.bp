@@ -1,6 +1,6 @@
 {
   "$schema": "https://blueprints.ndmh.xyz/blueprint-v1.schema.json",
-  "format_version": 2,
+  "format_version": 1,
   "bid": "xUMy22FBQ_i6efYIcnU5zA",
   "update_url": "https://blueprints.ndmh.xyz/blueprints/minecraft/java/papermc.bp",
   "name": "PaperMC",
@@ -13,7 +13,7 @@
     "server_config:minecraft",
     "plugin_manager:minecraft,papermc"
   ],
-  "version": 1,
+  "version": 2,
   "docker_images": [
     {
       "name": "Java 21",
