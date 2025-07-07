@@ -8,6 +8,8 @@
 
 PROJECT=paper
 
+apk add --no-cache curl jq
+
 
 
 if [ -n "${DL_PATH}" ]; then
